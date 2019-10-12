@@ -8,15 +8,13 @@ var boxes = $(".box")
 // 	postDisplay();
 // }
 
-for(i = 0; i < box.length; )
-
-$("#activities").keypress(function(event) {
+$(".listItem").keypress(function(event) {
 	if(event.which === 13) {
 		//store todo from input
 		var todoItem = $(this).val();
 		$(this).val("");
 		//create new li and add to ul
-		$("ul").append('<li><span><i class="fas fa-trash-alt"></i></span> ' + todoItem + '</li>');
+		$(this).append('<li><span><i class="fas fa-trash-alt"></i></span> ' + todoItem + '</li>');
 	}
 });
 
