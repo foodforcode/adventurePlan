@@ -1,0 +1,84 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px 0px 50px 0px;
+	font-size: 45px;
+	font-weight: 800;
+}
+
+.display1, .display2 {
+	display: none;
+	font-size: 32px;
+}
+
+#destinationDisplay, #daysDisplay {
+	text-transform: capitalize;
+}
+
+#container {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: inline;
+}
+
+.box {
+	width: 30%;
+	float: left;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.entry {
+	text-align: center;
+}
+
+.activities {
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+#dest {
+	width: 100px;
+}
+
+#length {
+	width: 30px;
+}
+
+.todo {
+	border: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+
+}
+
+li span {
+	height: 40px;
+	text-align: center;
+	color: red;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
