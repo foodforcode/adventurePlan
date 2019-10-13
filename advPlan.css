@@ -26,6 +26,14 @@ body {
 	justify-content: inline;
 }
 
+input {
+	font-family: 'Quicksand', sans-serif;
+}
+
+input:focus {
+	outline: none;
+}
+
 .box {
 	width: 30%;
 	float: left;
@@ -55,8 +63,13 @@ body {
 	border: border-box;
 }
 
+p {
+	
+}
+
 ul {
 	list-style: none;
+	text-transform: capitalize;
 }
 
 li {
