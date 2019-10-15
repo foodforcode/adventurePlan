@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Adventure Planner</title>
+	<title><i class="fas fa-mountain"></i>Adventure Planner</title>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="advPlan.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -17,40 +17,33 @@
 		<div class="entry">
 			<p>
 			I'm going to
-			<input type="text" id="dest" name="destination" placeholder="Destination"> for <input type="number" min="1" max="5000" placeholder="#" name="number of days" id="length"> days.
+        <input type="text" id="dest" name="destination" placeholder="Destination" required autocomplete="off"> for <input type="number" id="length" min="1" max="5000" placeholder="#" name="number of days" required autocomplete="off"> days.
+        <button><i class="far fa-paper-plane"></i> Let's go!</button>
 			</p>
 		</div>
 
 	<div id="container">
 		<div class="box">
-			<p class="todo">I want to visit:<p>
-				<input type="text" class="listItem" placeholder="Landmark" name="activities">
-			<ul>
-				
+			<p class="todo">I need to pack:<i class="fas fa-passport glyph"></i></p>
+				<input type="text" class="listItem" placeholder="+ new item" name="packing" autocomplete="off">
+			<ul id="packing">
 			</ul>
 		</div>
+    
 		<div class="box">
-			<p class="todo">I want to eat:<p>
-				<input type="text" class="listItem" placeholder="Food, Restaurant" name="food">
-			<ul>
-				
+      <p class="todo">I want to go to:<i class="fas fa-map-pin glyph"></i></p>
+				<input type="text" class="listItem" placeholder="+ new item" name="location" autocomplete="off">
+			<ul id="location">
 			</ul>
 		</div>
+    
 		<div class="box">
-			<p class="todo">I want to stay in:<p>
-				<input type="text" class="listItem" placeholder="Neighborhood" name="location">
-			<ul>
-				
+			<p class="todo">I want to eat:<i class="fas fa-utensils glyph"></i></p>
+				<input type="text" class="listItem" placeholder="+ new item" name="food" autocomplete="off">
+			<ul id="food">
 			</ul>
 		</div>
-		<div class="itinerary">
-			<div class="square"><span class="dayPlan"></span></div>
-		</div>
-	</div>
+    
 <script type="text/javascript" src="advPlan.js"></script>
 </body>
 </html>
-
-<!-- //add trash cans
-//style
-// -->
